@@ -1,0 +1,49 @@
+﻿' IMDbScraper Changelog
+
+' 20100824 Revision : 1.02
+' 20100902 Fix      : 'Paste Imdb' Faulty on Top250, ex: ToyStory3 http://www.imdb.com/title/tt0435761/
+' 20100902 Change   : requestScrape.Timeout, from 3000 to 6000
+' 20100905 Change   : Captures 'Original Title', reverse title position
+' 20101010 Change   : Use fromCodeRef against Certificate
+' 20101010 Change   : GetImdbStream's requestScrape.Timeout as caller defined
+' 20101010 Add      : GetImdbStream's requestScrape.ReadWriteTimeout value as timeout*2
+' 20101010 Change   : UserAgent from Firefox/3.6.4 to Firefox/3.6.10
+' 20101010 Fix      : Plot With 1 HyperLink http://www.imdb.com/title/tt1094249/
+
+' 20101216 Revision : 1.10
+' 20101216 Update   : UserAgent from Firefox/1.9.2.10 to Firefox/1.9.2.13
+' 20101218 Update   : Remove capturing original title refer to IMDb new layout
+' 20101221 Update   : Revamp IMDb Regex Engine
+
+' 20101222 Revision : 1.20
+' 20101222 Change   : Moving forward OO Concept
+' 20101224 Merge    : Implement Translator class
+' 20101224 Merge    : Implement charRef class
+
+' 20101225 Revision : 1.30
+' 20101225 Change   : Moving forward Managed Dynamic Link Library
+
+' 20110115 Revision : 1.31
+' 20110115 Update   : Translator Version 1.11
+
+' 20110430 Revision : 1.32
+' 20110430 Update   : UserAgent from Firefox/3.6.13 to Firefox/4.0.1.
+' 20110430 Change   : ReadWriteTimeout from timeOut * 2 to 1.5
+' 20110430 Add      : HTTP-Headers : Accept;Accept-Charset;Accept-Language;
+' 20110430 Add      : Content-Encoding: gzip
+' 20110430 Fix      : Movie title swapping & integrity for getTitle & getAkas
+' 20110430 Add      : Expand getTitle to getMovTitle & getAltTitle
+
+' 20140120 Revision : 1.33
+' 20140120 Update   : UserAgent from Firefox/4.0.1 to Firefox/26.0.
+' 20140120 Remove   : Remove Translator class
+' 20140120 Update   : Vacumm code & comments
+' 20140120 Change   : Release to Open-source
+	
+	
+' Some links for testing purpose
+'http://www.imdb.com/title/tt1375666/combined   'Inception
+'http://www.imdb.com/title/tt0468569/combined	'The Dark Knight
+'http://www.imdb.com/title/tt1055369/combined	'Transformers: Revenge of the Fallen
+'http://www.imdb.com/title/tt1519640/combined	'Chuen sing yit luen - yit lat lat
+'http://www.imdb.com/title/tt0120815/combined	'Saving Private Ryan
