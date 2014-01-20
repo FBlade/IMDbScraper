@@ -1,5 +1,5 @@
 # IMDbScraper
-===========
+
 IMDbScraper, .NET Dynamic-link library for scraping movie information from IMDb.
 
 The library written under concern of Movie, might break if used against TV series.  
@@ -8,15 +8,15 @@ It's fairly easy to integrated into other VB project since it's a managed DLL bu
 
 If interested on movies data in Chinese, kindly check out it's sister project [MtimeScraper](https://github.com/hebeguess/MtimeScraper) (Chinese variant of IMDb).
 
-**NOTICE** : It's been a while since my last code update, hence some parts of it may be broken.
+**NOTICE** : It's been a while since my last contribution on the project, some parts of it may be broken.
+
 
 ### Usage
 -----
-Load and Compiled yourself in Visual Studio.
+* Load and compiled the project in Visual Studio.
+* Import the generated DLL into your desire projects.  
 
-Import the generated DLL into other projects
-
-Declare new IMDb Class, pass either html source OR movie title to constructor.
+Declare new IMDb Class, pass either html source OR movie title to it's constructor.
 
     // While you already have html content
     IMDb i = new IMDb(string pageSource);
@@ -27,7 +27,7 @@ Declare new IMDb Class, pass either html source OR movie title to constructor.
     // Library usage is simple, IDE will assists you along the way. Just try out yourself.
     string movieTitle = i.getTitle();
 
-Remember to apply threading if you're using the latter constructor to avoid deadlock while waiting web response complete.
+Remember to apply threading if you're using the latter to avoid deadlock while waiting web response complete.
 
 
 ### Terms of Use
