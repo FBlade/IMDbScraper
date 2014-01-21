@@ -8,15 +8,15 @@ It's fairly easy to integrated into other VB project since it's a managed DLL bu
 
 If interested on movies data in Chinese, kindly check out it's sister project [MtimeScraper](https://github.com/hebeguess/MtimeScraper) (Chinese variant of IMDb).
 
-**NOTICE** : It's been a while since my last contribution on the project, some parts of it may be broken.
+**NOTICE** : It's been a while since my last contribution to the project, some parts of it may be broken.
 
 
 ### Usage
 -----
 * Load and compiled the project in Visual Studio.
-* Import the generated DLL into your desire projects.  
+* Import the generated DLL into your desire projects.
 
-Declare new IMDb Class, pass either html source OR movie title to it's constructor.
+Declare new IMDb Class, pass either html source OR movie number from URL to it's constructor.
 
     // While you already have html content
     IMDb i = new IMDb(string pageSource);
@@ -24,7 +24,7 @@ Declare new IMDb Class, pass either html source OR movie title to it's construct
     // Library will handle content loading for you; movie numbers from URL, OPTIONAL timeout value for WebRequest
     IMDb i = new IMDb(Integer movNo, Integer timeOut);
 
-    // Library usage is simple, IDE will assists you along the way. Just try out yourself.
+    // Other library usages is simple, IDE will assists you along the way. Just try out yourself.
     string movieTitle = i.getTitle();
 
 Remember to apply threading if you're using the latter to avoid deadlock while waiting web response complete.
